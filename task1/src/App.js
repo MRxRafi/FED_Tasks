@@ -62,6 +62,7 @@ export default function NewApp(){
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
   const [open, setOpen] = React.useState(false);
+  const [listName, setListName] = React.useState('Customers');
 
   const toggleDrawer = open => e => {
     if(e.type === 'keydown' && (e.key === 'Tab' || e.key === 'Shift')){
@@ -81,6 +82,7 @@ export default function NewApp(){
         <ListItem button onClick={e => {
           e.preventDefault();
           setValue(0);
+          setListName('Customers');
         }}>
           <ListItemIcon><PermContactCalendarIcon/></ListItemIcon>
           <ListItemText>Customer List</ListItemText>
@@ -88,6 +90,7 @@ export default function NewApp(){
         <ListItem button onClick={e => {
           e.preventDefault();
           setValue(1);
+          setListName('Trainings');
         }}>
           <ListItemIcon><SubjectIcon/></ListItemIcon>
           <ListItemText>Training List</ListItemText>
@@ -104,7 +107,7 @@ export default function NewApp(){
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Trainings & Customers
+              {listName}
             </Typography>
         </Toolbar>
       </AppBar>
