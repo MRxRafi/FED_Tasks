@@ -2,14 +2,20 @@
 
 # dependencies
 /task1/node_modules
+/task2/node_modules
+/task3/node_modules
 /task1/.pnp
 /task1/.pnp.js
 
 # testing
 /task1/coverage
+/task2/coverage
+/task3/coverage
 
 # production
 /task1/build
+/task2/build
+/task3/build
 
 # misc
 /task1/.DS_Store
