@@ -31,7 +31,6 @@ const TrainingList = () => {
 
     const addTraining = (newTraining) => {
         var oldV = newTraining.customer;
-        var oldD = newTraining.date;
         newTraining.customer = 'https://customerrest.herokuapp.com/api/customers/' + oldV;
         //newTraining.date = moment(oldD, "YYYYMMDD").fromNow()[0]
         //console.log(newTraining.date);

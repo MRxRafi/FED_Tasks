@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@date-io/date-fns": "^1.3.11",
+    "@jfschmiechen/react-event-calendar": "^0.2.7",
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
     "@material-ui/pickers": "^3.2.8",
@@ -12,6 +13,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-event-calendar": "^0.3.0",
+    "react-monthly-events-calendar": "^1.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-table": "^6.10.3"

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import CustomerList from './components/CustomerList.js';
 import TrainingList from './components/TrainingList.js';
-import CalendarPage from './components/Calendar.js';
+import Calendar from './components/Calendar.js';
 
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
@@ -11,6 +11,7 @@ import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import SubjectIcon from '@material-ui/icons/Subject';
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -103,7 +104,7 @@ export default function NewApp(){
           setValue(2);
           setListName('Calendar');
         }}>
-          <ListItemIcon><PermContactCalendarIcon/></ListItemIcon>
+          <ListItemIcon><CalendarTodayIcon/></ListItemIcon>
           <ListItemText>Calendar</ListItemText>
         </ListItem>
       </List>
@@ -129,7 +130,7 @@ export default function NewApp(){
         {TrainingList}
       </TabPanel>
       <TabPanel value={value} index={2}>
-        {CalendarPage}
+        <Calendar/>
       </TabPanel>
 
       <Drawer open={open} onClose={toggleDrawer(false)}>
